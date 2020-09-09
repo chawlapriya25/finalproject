@@ -3,16 +3,20 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "/Users/priya/finalproject/bin/www"
+    "start": " node ./bin/www"
   },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "bootstrap": "^4.5.2",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "^4.16.4",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.6.1",
     "http-errors": "~1.6.3",
+    "mongoose": "^5.10.3",
     "morgan": "~1.9.1",
     "node-sass-middleware": "0.11.0",
-    "pug": "2.0.0-beta11"
+    "pug": "^2.0.0-beta11"
   }
 }

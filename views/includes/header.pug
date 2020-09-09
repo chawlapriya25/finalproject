@@ -1,16 +1,7 @@
   
-header
-  nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
-    a.navbar-brand(href="/") Chirp
-    button.navbar-toggler(type="button"
-                          data-toggle="collapse"
-                          data-target="#navbarCollapse"
-                          aria-controls="navbarCollapse"
-                          aria-expanded="false"
-                          aria-label="Toggle navigation")
-      span.navbar-toggler-icon
-
-    #navbarCollapse.collapse.navbar-collapse
-      ul.navbar-nav.mr-auto
-
-      a.btn.btn-outline-primary(href="/register") Register
+nav.navbar.site-header.sticky-top.navbar-dark.bg-dark.py-1
+  .container.d-flex.flex-column.flex-md-row.justify-content-between
+    a.text-warning.navbar-brand(href="/") Killin it
+    a.py-2.d-none.d-md-inline-block(href='#') Home
+    a.py-2.d-none.d-md-inline-block(href='#') Product
+    a.py-2.d-none.d-md-inline-block(href='#') Contact

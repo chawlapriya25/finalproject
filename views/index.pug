@@ -1,5 +1,76 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  #myCarousel.carousel.slide(data-ride='carousel')
+    // Indicators
+    ol.carousel-indicators
+      li.active(data-target='#myCarousel' data-slide-to='0')
+      li(data-target='#myCarousel' data-slide-to='1')
+      li(data-target='#myCarousel' data-slide-to='2')
+    // Wrapper for slides
+    .carousel-inner
+      .item.active
+        img(src='./images/view1.jpg' alt='' style='height:50% width:100%;')
+      .item
+        img(src='./images/view4.jpeg' alt='' style=' width:100%;')
+      .item
+        img(src='./images/view2.jpg' alt='' style='width:100%;')
+    // Left and right controls
+    a.left.carousel-control(href='#myCarousel' data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left
+      span.sr-only Previous
+    a.right.carousel-control(href='#myCarousel' data-slide='next')
+      span.glyphicon.glyphicon-chevron-right
+      span.sr-only Next
+  h2.text-center Men
+  .row.px-5.pt-5
+    .col-md-4.mt-4.mt-sm-0.card-container
+      .card.text-center.product.p-4.pt-5.border-0.h-100.rounded-0
+        img.img-fluid.d-block.mx-auto(src='https://raw.githubusercontent.com/solodev/bootstrap-cards-shopping-cart/master/images/gear-glasses.jpg' alt='Pilot Aviator Glasses Gear Image')
+        .card-body.p-4.py-0.h-xs-440p
+          h5.card-title.font-weight-semi-bold.mb-3.w-xl-220p.mx-auto Pilot Aviator Glasses
+          p.price $45.00
+        p.btn.w-100.px-4.mx-auto
+          input.btn.btn-dark.btn-lg.w-100(type='submit' name='add-button' value='Buy Now')
+    .col-md-4.mt-4.mt-sm-0.card-container
+      .card.text-center.product.p-4.pt-5.border-0.h-100.rounded-0
+        img.img-fluid.d-block.mx-auto(src='https://raw.githubusercontent.com/solodev/bootstrap-cards-shopping-cart/master/images/gear-hat.jpg' alt='Command Hats Gear Image')
+        .card-body.p-4.py-0.h-xs-440p
+          h5.card-title.font-weight-semi-bold.mb-3.w-xl-220p.mx-auto Command Hats
+          p.price $15.00
+        p.btn.w-100.px-4.text-center.mx-auto
+          input.btn.btn-dark.btn-lg.w-100(type='submit' name='add-button' value='Buy Now')
+    .col-md-4.mt-4.mt-sm-0.card-container
+      .card.text-center.product.p-4.pt-5.border-0.h-100.rounded-0
+        img.img-fluid.d-block.mx-auto(src='https://raw.githubusercontent.com/solodev/bootstrap-cards-shopping-cart/master/images/gear-tshirt.jpg' alt='Mission T-Shirts Gear Image')
+        .card-body.p-4.py-0.h-xs-440p
+          h5.card-title.font-weight-semi-bold.mb-3.w-xl-220p.mx-auto Mission T-Shirts
+          p.price $25.00
+        p.btn.w-100.px-4.mx-auto
+          input.btn.btn-dark.btn-lg.w-100(type='submit' name='add-button' value='Buy Now')
+  h2.text-center Women
+  .row.px-5.pt-5
+  .col-md-4.mt-4.mt-sm-0.card-container
+    .card.text-center.product.p-4.pt-5.border-0.h-100.rounded-0
+      img.img-fluid.d-block.mx-auto(src='https://raw.githubusercontent.com/solodev/bootstrap-cards-shopping-cart/master/images/gear-glasses.jpg' alt='Pilot Aviator Glasses Gear Image')
+      .card-body.p-4.py-0.h-xs-440p
+        h5.card-title.font-weight-semi-bold.mb-3.w-xl-220p.mx-auto Pilot Aviator Glasses
+        p.price $45.00
+      p.btn.w-100.px-4.mx-auto
+        input.btn.btn-dark.btn-lg.w-100(type='submit' name='add-button' value='Buy Now')
+  .col-md-4.mt-4.mt-sm-0.card-container
+    .card.text-center.product.p-4.pt-5.border-0.h-100.rounded-0
+      img.img-fluid.d-block.mx-auto(src='https://raw.githubusercontent.com/solodev/bootstrap-cards-shopping-cart/master/images/gear-hat.jpg' alt='Command Hats Gear Image')
+      .card-body.p-4.py-0.h-xs-440p
+        h5.card-title.font-weight-semi-bold.mb-3.w-xl-220p.mx-auto Command Hats
+        p.price $15.00
+      p.btn.w-100.px-4.text-center.mx-auto
+        input.btn.btn-dark.btn-lg.w-100(type='submit' name='add-button' value='Buy Now')
+  .col-md-4.mt-4.mt-sm-0.card-container
+    .card.text-center.product.p-4.pt-5.border-0.h-100.rounded-0
+      img.img-fluid.d-block.mx-auto(src='https://raw.githubusercontent.com/solodev/bootstrap-cards-shopping-cart/master/images/gear-tshirt.jpg' alt='Mission T-Shirts Gear Image')
+      .card-body.p-4.py-0.h-xs-440p
+        h5.card-title.font-weight-semi-bold.mb-3.w-xl-220p.mx-auto Mission T-Shirts
+        p.price $25.00
+      p.btn.w-100.px-4.mx-auto
+        input.btn.btn-dark.btn-lg.w-100(type='submit' name='add-button' value='Buy Now')
