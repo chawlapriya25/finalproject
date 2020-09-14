@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 
 // connect db
-mongoose.connect('mongodb://localhost/test', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost/shop', {useNewUrlParser: true});
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
