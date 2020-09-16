@@ -23,8 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // bode parser middleware
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
- 
-// parse application/json
+ // parse application/json
 app.use(bodyParser.json());
 // express session middleware
 app.use(session({
