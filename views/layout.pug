@@ -6,6 +6,15 @@ html
   
      include includes/header
      .container
-     block content
-     include includes/footer
-  include includes/foot 
+      != messages('message', locals)
+      if errors
+         each error, i in errors 
+            div(class="alert alert-danger") #{error.msg}
+      block content
+      br
+      br
+      br
+      br
+      br
+      include includes/foot
+  include includes/footer

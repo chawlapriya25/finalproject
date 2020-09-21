@@ -11,9 +11,10 @@ header
 
     #navbarCollapse.collapse.navbar-collapse
       ul.navbar-nav.mr-auto
-
-      a.btn.btn-outline-primary(href="/Homer") Home
-      a.btn.btn-outline-primary(href="/Contact") Contact 
-      a.btn.btn-outline-primary(href="/Features") Features
-
-       
+      a.btn.btn-outline-primary(href="/") Home
+      a.btn.btn-outline-primary(href="/Contact") Contact
+      if user
+        a.btn.btn-outline-primary(href="/users/logout") Logout
+      else
+        a.btn.btn-outline-primary(href="/users/login") Login    
+        a.btn.btn-outline-primary(href="/users/register") Register      

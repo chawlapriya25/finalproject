@@ -1,5 +1,4 @@
 var express = require('express');
-var app = require("../app");
 var router = express.Router();
 var mongoose = require('mongoose');
 var Product = require('../models/product');
@@ -25,7 +24,6 @@ router.get('/product/:title', function(req,res,next){
 
 router.get('/contact', function(req,res,next){
   res.render('contact');
-})
+});
 
-module.exports = app;
 module.exports = router;

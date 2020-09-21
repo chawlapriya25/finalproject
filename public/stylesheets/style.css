@@ -1519,6 +1519,17 @@ textarea.form-control {
 .form-check-label {
   margin-bottom: 0; }
 
+  .alert-error {
+    color: #a94442;
+    border-color: #ebccd1;
+  }
+  
+  .alert-success_msg {
+    color: #3c763d;
+    border-color: #d6e9c6;
+    background-color: #dff0d8;
+  }
+
 .form-check-inline {
   display: inline-flex;
   align-items: center;
@@ -7167,5 +7178,12 @@ body > .container {
   height: 60px;
   line-height: 60px;
   background-color: #f5f5f5; }
+
+  .footerr {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  }
 
 /*# sourceMappingURL=style.css.map */
